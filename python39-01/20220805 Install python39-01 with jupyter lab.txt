@@ -1,6 +1,32 @@
 20220805 Install python39-01 with jupyter lab
-git install
-anaconda3 install
+Install git
+https://git-scm.com/
+Click on Downloads
+Click on Windows
+Under Standalone Installer
+Click on 64-bit Git for Windows Setup
+Follow installation
+
+Install Anaconda3
+https://www.anaconda.com/distribution/
+Click on Download under Anaconda Distribution
+Run installation binary after download
+
+Start from menu
+Right click -> More ->  Run as Administrator
+
+Run conda packaging tool to latest version
+
+conda update -n base -c defaults conda
+
+Test:
+Open a command console as Administrator
+Right click on Command Prompt -> More … -> Run as administrator
+
+Type 
+git --help
+
+
 
 Open an anaconda3 window
 Find in menu Anaconda Prompt (Anaconda3) -> right click -> More -> Run as Administrator
