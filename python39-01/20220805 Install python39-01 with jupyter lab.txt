@@ -1,0 +1,64 @@
+20220805 Install python39-01 with jupyter lab
+git install
+anaconda3 install
+
+Open an anaconda3 window
+Find in menu Anaconda Prompt (Anaconda3) -> right click -> More -> Run as Administrator
+
+create new environment -> python39-01
+conda create -n python39-01 python=3.9
+
+conda activate python39-01
+go to a working directory ? 
+test versions
+python --version
+pip --version
+
+
+Install packages to use
+
+pip install jupyterlab
+pip install jupyter
+pip install pandas
+pip install sklearn
+pip install matplotlib
+pip install keras
+
+Run notebook server
+jupyter notebook --allow-root --no-browser
+Then copy localhost URL and paste into browser and go to page
+
+Change the name of the notebook from Untitled by typing over name...
+Add code to cell 1:
+
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+Click run icon
+
+Add code to cell 2: 
+n_pts=100
+np.random.seed(0)
+top_region=np.array([np.random.normal(10,2,n_pts), np.random.normal(12,2,n_pts)]).T
+bottom_region= np.array([np.random.normal(5,2, n_pts), np.random.normal(6,2, n_pts)]).T
+_, ax= plt.subplots(figsize=(4,4))
+ax.scatter(top_region[:,0], top_region[:,1], color='r')
+ax.scatter(bottom_region[:,0], bottom_region[:,1], color='b')
+ 
+Click run icon
+should display a scatterplot graph
+
+Ctrl+C in Anaconda window to terminate server
+Answer Y to prompt
+notebook is saved with last results
+Close the notebook browser window
+
+
+Now try with Jupyter Lab
+At Anaconda3 prompt type:
+jupyter lab --allow-root --no-browser
+Then copy localhost URL and paste into browser and go to page
+
+repeat steps above for entering in cell
+
