@@ -1,0 +1,6 @@
+# Specific lib versions to avoid conflicts
+  - attrs=20.3
+  - click=7.1
+  - packaging=20.9
+  - six=1.15
+  - typing-extensions=3.7
